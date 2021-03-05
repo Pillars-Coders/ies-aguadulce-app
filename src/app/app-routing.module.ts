@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'courses',
+    loadChildren: () => import("./index/index.component").then(mod => mod.IndexComponent),
     pathMatch: 'full'
   },
   {

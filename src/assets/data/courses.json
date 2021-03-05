@@ -1,12 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Desarrollo de Aplicaciones Web",
-    "description": "Curso para el aprendizaje del desarrollo de aplicaciones web con tecnologías como Javascript o PHP"
+    "name": "ESO",
+    "description": "Educación Secundaria Obligatoria"
   },
   {
     "id": 2,
-    "name": "Desarrollo de Aplicaciones Multiplataforma",
+    "name": "Bachillerato",
+    "description": "Educación previa a la universidad"
+  },
+  {
+    "id": 3,
+    "name": "FP Básica",
+    "description": "Educación básica"
+  },
+  {
+    "id": 4,
+    "name": "FP Grado Medio - ASIR",
+    "description": "Curso para el aprendizaje de Administración de Sistemas Informáticos en Red"
+  },
+  {
+    "id": 5,
+    "name": "FP Grado Superior - Desarrollo de Aplicaciones Web",
+    "description": "Curso para el aprendizaje del desarrollo de aplicaciones web con tecnologías como Javascript o PHP"
+  },
+  {
+    "id": 6,
+    "name": "FP Grado Superior - Desarrollo de Aplicaciones Multiplataforma",
     "description": "Curso para el aprendizaje del desarrollo de aplicaciones multiplataforma para escritorio y dispositivos móviles"
   }
 ]

@@ -15,11 +15,11 @@ export class CourseComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
-      this.getRoute(Number(params.id));
+      this.getCoute(Number(params.id));
     });
   }
 
-  private getRoute(id: number): void {
+  private getCoute(id: number): void {
     this.coursesService.getCourse(id).subscribe(res => {
       this.course = res;
     });

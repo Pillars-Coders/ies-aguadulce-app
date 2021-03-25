@@ -2,9 +2,11 @@
 <div class="container">
   <div class="row justify-content-center">
     <h3 class="text-center col-12">Cursos</h3>
-    <button *ngFor="let course of courses">
-      <!--<a>Ver curso</a>-->
-      <a [routerLink]="['/courses', course.id]">{{ course.name }}</a>
-    </button>
+    <a  *ngFor="let course of courses" [routerLink]="['/courses', course.id]">
+      <button class="mr-1 btn btn-primary">
+        <!--<a>Ver curso</a>-->
+        {{ course.name }}
+      </button>
+    </a>
   </div>
 </div>

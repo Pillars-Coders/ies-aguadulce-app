@@ -21,12 +21,13 @@
   },
   {
     "id": 5,
-    "name": "FP Grado Superior - Desarrollo de Aplicaciones Web",
-    "description": "Curso para el aprendizaje del desarrollo de aplicaciones web con tecnologías como Javascript o PHP"
+    "name": "FP Grado Superior - DAW",
+    "description": "Curso para el aprendizaje del desarrollo de aplicaciones web con tecnologías como Javascript o PHP",
+    "asignaturas": "Programación, bases de datos, Sistemas y redes, Lenguage de marcas"
   },
   {
     "id": 6,
-    "name": "FP Grado Superior - Desarrollo de Aplicaciones Multiplataforma",
+    "name": "FP Grado Superior - DAM",
     "description": "Curso para el aprendizaje del desarrollo de aplicaciones multiplataforma para escritorio y dispositivos móviles"
   }
 ]

@@ -1,7 +1,14 @@
+<style>
+  h1 {
+    color: blue;
+  }
+</style>
+
 <div>
   <a [routerLink]="['/courses']">Volver</a>
 </div>
-<div *ngIf="course" class="bg-primary">
+<div *ngIf="course" class="text-center">
   <h1 class="curso">{{ course.name }}</h1>
   <p>{{ course.description }}</p>
+  <p>{{ course.asignaturas }}</p>
 </div>

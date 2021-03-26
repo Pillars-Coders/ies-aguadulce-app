@@ -36,8 +36,13 @@
   },
   {
     "id": 12,
-    "name": "ASIR",
-    "description": "Curso para el aprendizaje del Administración de Sistemas Informáticos en Red"
+    "name": "SMR",
+    "description": "Sistemas Microinformáticos en Red"
+  },
+  {
+    "id": 13,
+    "name": "FP Básica",
+    "description": "Formación Profesional Básica"
   },
   {
     "id": 21,
@@ -48,5 +53,10 @@
     "id": 22,
     "name": "DAM",
     "description": "Curso para el aprendizaje del desarrollo de aplicaciones multiplataforma para escritorio y dispositivos móviles"
+  },
+  {
+    "id": 23,
+    "name": "ASIR",
+    "description": "Curso para el aprendizaje del Administración de Sistemas Informáticos en Red a distancia"
   }
 ]

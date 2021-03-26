@@ -1,7 +1,1476 @@
-<div>
-  <a [routerLink]="['/courses']">Volver</a>
+<!--ESO-->
+<div *ngIf="course.id == 1" class="container">
+
+    <div class=" row">
+
+        <h1 class="text-center col-12">1º ESO - Asignaturas</h1>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown>
+            <button id="dropdownConfig" ngbDropdownToggle type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Troncales (18 horas)
+      </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                <button ngbDropdownItem><a class="dropdown-item " href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=ByG">Biología
+                  y Geología (3h)</a></button>
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=ByG">Geografía
+                    e Historia (3h)</a></button>
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=ByG">Lengua
+                      castellana y literatura (4h) </a></button>
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=ByG">Matemáticas
+                      (4h)</a></button>
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=ByG">Inglés
+                      (4h)</a></button>
+            </div>
+
+
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown>
+            <button id="dropdownConfig" ngbDropdownToggle type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Específicas (7 horas)
+      </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=EF">Educación
+                Física (2h) </a></button>
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=REL">Religión
+                y moral católica (1h) </a></button>
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=VE">Educación
+                en Valores (1h) </a></button>
+                <button ngbDropdownItem> <a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=EPVA">Educación
+                Plástica, Visual y audiovisual (2h) </a></button>
+                <button ngbDropdownItem><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=MUS">Música
+                (2h)</a></button>
+            </div>
+
+
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Libre disposición (2 horas) </button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="#">Educación ambiental (2h) </a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=MLCP3">Refuerzo
+            de materias instrumentales (2h) </a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=MLCP1">Promoción
+            a la lectura (2h) </a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=MLCP2">Taller
+            de lectura en lengua francesa (2h) </a></button>
+                <button><a class="dropdown-item" href="#">Taller de mitología (2h)</a></button>
+                <button><a class="dropdown-item" href="#">Taller comunicación y creación audiovisual (2h)</a></button>
+            </ul>
+
+        </div>
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Libre configuración autonómica (2 horas) </button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=FR2">Francés
+            (2h) </a></button>
+                <button><a class="dropdown-item" href="#">Cambios sociales y género (2h) </a></button>
+                <button><a class="dropdown-item" href="#">Cultura clásica (2h) </a></button>
+                <button><a class="dropdown-item" href="#">Tecnología aplicada (2h) </a></button>
+                <button><a class="dropdown-item" href="#">Iniciación a la Actividad Emprendedora (2h)</a></button>
+                <button><a class="dropdown-item" href="#">Ampliación de contenidos de Educación Física (2h)</a></button>
+            </ul>
+
+        </div>
+
+
+
+        <div class="btn-group col-lg-6 col-sm-12">
+            <button class=" mt-3 btn btn-info"> Tutoría (1 hora)</button>
+        </div>
+
+
+
+        <img src="imgsAsig/fondoAsig.jpg" alt="" class="mt-5 w-75 d-block mx-auto">
+
+        <h1 class="text-center col-12 m-3">Más información</h1>
+        <div class="text-center mx-auto">
+            <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/ESO/Hojadeinformaciondeasignaturas1ESO.pdf" class="btn btn-primary mb-3 mr-4">Optativas</a>
+            <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/Optativas_ESO/1ESOTallerComunicacinYcreacinAudiovisual.pdf" class="btn btn-primary mb-3">Taller de comunicación y creación audiovisual</a>
+        </div>
+    </div>
+
+
+
 </div>
-<div *ngIf="course">
-  <h1>{{ course.name }}</h1>
-  <p>{{ course.description }}</p>
+<div *ngIf="course.id == 2" class="container">
+
+    <div class="row">
+
+        <h1 class="text-center col-12">2º ESO - Asignaturas</h1>
+
+        <div uib-dropdown keyboard-nav class="btn-group col-lg-4 col-sm-12 mt-3">
+            <button type="button" class="btn btn-info dropdown-toggle " uib-dropdown-toggle aria-expanded="true">
+        Troncales (16 horas)
+      </button>
+            <ul uib-dropdown-menu class="dropdown-menu" role="menu" aria-labelledby="simple-btn-keyboard-nav">
+                <button role="menuitem"><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=FyQ">Física
+            y Química (3h)</a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=GeH">Geografía
+            e Historia (3h)</a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=LCL">Lengua
+            castellana y literatura (4h) </a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=MAT">Matemáticas
+            (3h)</a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=ING">Inglés
+            (3h)</a></button>
+            </ul>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Específicas (10 horas)</button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=EF">Educación
+            Física (2h) </a></button>
+                <button class="dropdown-item text-warning fw-bold">Elegir entre una de las dos asignatura</button>
+                <ul>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=REL">Religión
+              y moral católica (1h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=VE">Educación
+              en Valores (1h) </a></button>
+                </ul>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=EPVA">Educación
+            Plástica, Visual y Audiovisual (2h) </a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=MUS">Música
+            (2h)</a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=TEC">Tecnología
+            (3h)</a></button>
+            </ul>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Libre disposición (1 hora)</button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="#">Refuerzo de Lengua (1h) </a></button>
+                <button><a class="dropdown-item" href="#">Taller de Lectura en lengua francesa (1h) </a></button>
+                <button><a class="dropdown-item" href="#">Taller literario (1h) * </a></button>
+                <button><a class="dropdown-item" href="#">Mejora tus habilidades matemáticas (1h) * - Recomendado itinerario
+            académicas </a></button>
+            </ul>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Libre configuración autonómica (2 horas). Elegir una asignatura de entre:</button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=FR2">Francés
+            (2h)</a></button>
+                <button><a class="dropdown-item" href="#">Cambios sociales y género (2h)</a></button>
+                <button><a class="dropdown-item" href="#">Cultura clásica (2h)</a></button>
+                <button><a class="dropdown-item" href="#">Refuerzo de Matemáticas (2h) - Recomendado itinerario aplicadas</a></button>
+                <button><a class="dropdown-item" href="#">Iniciación a la Actividad Emprendedora (2h)</a></button>
+            </ul>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12">
+            <button class=" mt-3 btn btn-info"> Tutoría (1 hora)</button>
+        </div>
+
+
+        <h1 class="text-center col-12 mt-5">2º ESO P.M.A.R. (Programa Mejora Aprendizaje y Rendimiento)</h1>
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Troncales (18 horas)</button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=AMBLS">Ámbito
+            de carácter lingüístico y social (7)</a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=AMBCM">Ámbito
+            de carácter científico-matemático (8)</a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=ING**">Ámbito
+            de lenguas extranjeras / Primera lengua extranjera (3h)</a></button>
+            </ul>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Específicas (8 horas)</button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=EF">Educación
+            Física (2h)</a></button>
+                <button class="dropdown-item text-warning fw-bold">Elegir entre una de las dos asignatura</button>
+                <ul>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=REL">Religión
+              y moral católica (1h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=VE">Educación
+              en Valores (1h) </a></button>
+                </ul>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=EPVA">Educación
+            Plástica, Visual y Audiovisual (2h)</a></button>
+                <button><a class="dropdown-item" href="#">Tecnología (3h)</a></button>
+
+            </ul>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Libre configuración autonómica (2 horas)</button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="#">Incremento de ámbitos (2h)</a></button>
+            </ul>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Tutoría (2 horas)</button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="#">Tutoría con el grupo (1h)</a></button>
+                <button><a class="dropdown-item" href="#">Tutoría con el orientador (1h)</a></button>
+            </ul>
+        </div>
+
+        <img src="imgsAsig/fondoAsig.jpg" alt="" class="mt-5 w-75 d-block mx-auto">
+        <h1 class="text-center col-12 m-3">Más información</h1>
+        <div class="text-center col-12">
+            <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/ESO/Hojadeinformaciondeasignaturas2ESO.pdf" class="btn btn-primary mb-3">Optativas</a>
+        </div>
+    </div>
+</div>
+<div *ngIf="course.id == 3">
+
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center col-12 fw-bolder" id="titulo">3º ESO - Asignaturas</h1>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Troncales (19 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=BYG">Biología
+              y Geología (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=FQU">Física
+              y Química (2h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=GeH">Geografía
+              e Historia (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=LCL">Lengua
+              Castellana y Literatura (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=ING">Inglés
+              (4h)</a></button>
+                    <button><a class="dropdown-item" href="#">Matemáticas (4h)</a>
+                        <ul>
+                            <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=MAC">Académicas</a>
+                            </button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=MAP">Aplicadas</a>
+                            </button>
+                </ul>
+                </button>
+                </ul>
+
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Específicas (7 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=EF">Educación
+              Física (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=REL">Religión
+              y moral católica (1h) / Educación en Valores (1h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=TEC">Tecnología
+              (3h)</a></button>
+                </ul>
+
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Libre configuración autonómica (3 horas)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=ECDH">Educación
+              para la ciudadanía (1h)</a></button>
+                    <button><a class="dropdown-item" href="#">Elegir una entre</a>
+                        <ul>
+                            <button>Cambios sociales y género (2h)</button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=FR2">Francés
+                  (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Cultura clásica (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Iniciación a la Actividad Emprendedora (2h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=EPVA">Educación
+                  Plástica y Visual (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Música (2h)</a></button>
+                </ul>
+                </button>
+                </ul>
+
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Libre disposición (1 hora)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="#">Ajedrez (1h)*</a></button>
+                    <button><a class="dropdown-item" href="#">Debate * (1h)</a></button>
+                    <button><a class="dropdown-item" href="#">Taller de lectura en lengua francesa (1h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-6 col-sm-12">
+                <button class=" mt-3 btn btn-info"> Tutoría (1 hora)</button>
+            </div>
+
+
+            <img src="imgsAsig/fondoAsig.jpg" alt="" class="mt-5 w-75 d-block mx-auto">
+
+            <h2 class="text-center col-12 mt-3 fw-bolder">P.M.A.R. (Programa Mejora Aprendizaje y Rendimiento)</h2>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Troncales (19 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="#">Ámbito de carácter lingüístico y social (7h)</a></button>
+                    <button><a class="dropdown-item" href="#">Ámbito de carácter científico-matemático (8h)</a></button>
+                    <button><a class="dropdown-item" href="#">Ámbito de lenguas extranjeras / Primera lengua extranjera (4h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Específicas (8 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=EF">Educación
+              Física (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/3&cod_materia=REL">Tecnología
+              (3h)</a></button>
+                    <ul>
+                        <p class="text-warning text-bold">ELEGIR ENTRE 2</p>
+                        <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=REL">Religión
+                y moral católica</a></button>
+                        <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/2&cod_materia=VE">Educación
+                en Valores</a></button>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Libre configuración autonómica (3 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="#">Educación Plástica, Visual y Audiovisual (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Educación para la Ciudadanía y los Derechos Humanos (1h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Tutoría (2 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="#">Tutoría con el grupo (1h)</a></button>
+                    <button><a class="dropdown-item" href="#">Tutoría con el orientador (1h)</a></button>
+                </ul>
+            </div>
+
+            <h1 class="text-center col-12 mt-3 fw-bolder">Mas información</h1>
+            <div class="text-center mx-auto">
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/ESO/Hojadeinformaciondeasignaturas3ESO.pdf" class="btn btn-primary mb-3">Información sobre las asignaturas optativas de 3º de ESO</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div *ngIf="course.id == 4" class="container">
+
+    <div class="row">
+
+        <h1 class="text-center col-12">4º ESO - Asignaturas</h1>
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Troncales generales (14 horas)
+      </button>
+            <ul class="dropdown-menu ">
+                <button><a class="dropdown-item " href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=GeH">Geografía
+            e Historia (3h)</a></button>
+                <button><a class="dropdown-item" href="#">1ª Lengua extranjera (4h)</a></button>
+                <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=LCL">Lengua
+            castellana y literatura (4h) </a></button>
+                <button><a class="dropdown-item" href="#">Matemáticas Académicas (4h) / Matemáticas Aplicadas (4h)</a></button>
+
+            </ul>
+
+        </div>
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Troncales de opción. (6 horas)
+      </button>
+            <ul class="dropdown-menu">
+
+                <button class="text-center ">
+                    ACADÉMICAS
+                    <ul class=" border-top">
+                        <button><a class="dropdown-item" href="#">Biología y Geología (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Física y química (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Economía (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Latín (3h) </a></button>
+
+            </ul>
+            </button>
+            <button class="text-center ">
+                    APLICADAS
+                    <ul class=" border-top">
+                        <button><a class="dropdown-item" href="#">Ciencias aplicadas (3h) </a></button>
+            <button><a class="dropdown-item" href="#">Iniciación a la actividad emprendedora (3h) </a></button>
+            <button><a class="dropdown-item" href="#">Tecnología (3h)</a></button>
+            </ul>
+            </button>
+
+            </ul>
+
+        </div>
+        <div class="btn-group col-lg-6 col-sm-12">
+            <button class=" mt-3 btn btn-info"> Tutoría (1 hora)</button>
+        </div>
+        <div class="btn-group col-lg-6 col-sm-12  mt-3">
+            <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+              Específicas (9 horas)     </button>
+            <ul class="dropdown-menu">
+
+                <button class="text-center ">
+                    ACADÉMICAS
+                    <ul class=" border-top">
+                        <button><a class="dropdown-item" href="#">Educación física (2h) </a></button>
+                <button><a class="dropdown-item" href="#">Religión o valores éticos (1h) </a></button>
+                <ul>
+                    <p class="text-warning fw-bold"> ELEGIR ENTRE 2:</p>
+
+                    <button><a class="dropdown-item" href="#">Ed. Plástica, Visual y audiovisual (3h) </a></button>
+                    <button><a class="dropdown-item" href="#">Música (3h) </a></button>
+                    <button><a class="dropdown-item" href="#">2ª Lengua extrajera (3h) </a></button>
+                    <button><a class="dropdown-item" href="#">Filosofía (3h) </a></button>
+                    <button><a class="dropdown-item" href="#">Cultura científica (3h) </a></button>
+                    <button><a class="dropdown-item" href="#">Tecnología </a></button>
+                    <button><a class="dropdown-item" href="#">Una asignatura troncal no cursada de cualquiera de las dos opciones (3h) </a></button>
+                    <button><a class="dropdown-item" href="#">Refuerzos de Lengua Castellana (1h), Matemáticas (1h) e Inglés (1h) (3h) </a></button>
+                </ul>
+
+
+
+            </ul>
+            </button>
+            <button class="text-center ">
+                    APLICADAS
+                    <ul class=" border-top">
+                        <button><a class="dropdown-item" href="#">Educación física (2h)</a></button>
+            <button><a class="dropdown-item" href="#">Religión o valores éticos (1h) </a></button>
+            <ul>
+                <p class="text-warning fw-bold"> ELEGIR ENTRE 2:</p>
+                <button><a class="dropdown-item" href="#">Ed. Plástica, Visual y audiovisual (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Música (3h) </a></button>
+                <button><a class="dropdown-item" href="#">2ª Lengua extrajera (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Tecnología de la información y comunicación (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Filosofía (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Tecnología </a></button>
+                <button><a class="dropdown-item" href="#">Cultura científica (3h) </a></button>
+
+                <button><a class="dropdown-item" href="#">Una asignatura troncal no cursada de cualquiera de las dos opciones (3h) </a></button>
+                <button><a class="dropdown-item" href="#">Refuerzos de Lengua Castellana (1h), Matemáticas (1h) e Inglés (1h) (3h) </a></button>
+            </ul>
+            </ul>
+            </button>
+
+            </ul>
+
+        </div>
+
+
+
+
+        <div class="col-12">
+            <h1 class="text-center col-12 m-3">Más información</h1>
+            <div class="text-center mx-auto">
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/ESO/Hojadeinformaciondeasignaturas4ESO.pdf" class="btn btn-primary mb-3">Información sobre las asignaturas optativas de 4º de ESO</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Bachillerato-->
+<div *ngIf="course.id == 5">
+
+    <div class="container">
+        <section class="row">
+            <h1 class="text-center col-12">1º BACHILLERATO </h1>
+            <h2 class="text-center col-12">1º BACHILLERATO DE CIENCIAS - Asignaturas</h2>
+            <div class="col-lg-4 col-sm-12 btn-group mt-3">
+                <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Troncales (13 horas)
+        </button>
+                <ul class="dropdown-menu ">
+                    <button><a class="dropdown-item " href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=FIL">Filosofía
+              (3h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=LCL">Lengua
+              Castellana y Literatura (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=ING">Inglés
+              (3h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=MAT">Matemáticas
+              I (4h)</a></button>
+
+                </ul>
+
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Troncales de opción (elegir 2) (8 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=ByG">Biología
+              y Geología (4h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=DBT">Dibujo
+              Técnico (4h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=FyQ">Física
+              y Química (4h) (Obligatoria) </a></button>
+
+
+                </ul>
+
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Específicas obligatorias (4 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=EF">Educación
+              Física (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=FR2">Francés
+              (2h) – Obligatoria Bilingüe </a></button>
+                </ul>
+
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Específicas de opción (4 horas). </button>
+                <ul class="dropdown-menu">
+
+                    <button>
+                        <p class="text-center text-warning fw-bold "> Cursar dos materias de entre:</p>
+
+                        <ul>
+                            <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=ANAP">Anatomía
+                  aplicada (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=CULCI">Cultura
+                  científica (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=TIN">Tecnología
+                  industrial I (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=TIYC">TIC
+                  I (2h) </a></button>
+
+                </ul>
+                </button>
+
+                <button>
+                        <p class="text-center text-warning fw-bold ">Una anterior (2h) y 1 de libre configuración:</p>
+                        <ul>
+                            LCA
+
+                            <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=CEYE">Cultura
+                  emprendedora y empresarial </a></button>
+
+
+                </ul>
+
+                <ul>
+                    LC
+                    <button><a class="dropdown-item" href="#">Debate (2h) </a></button>
+                    <button><a class="dropdown-item" href="#">Dibujo Artístico (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=MAT">Estadística
+                  (2h) </a></button>
+                    <button><a class="dropdown-item" href="#">Introducción al comentario de texto (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">La historia a través del cine (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Laboratorio de ciencias (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Los medios de comunicación en la era digital (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Preparación de exámenes oficiales DELF (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Robótica I (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Producción audiovisual I (2h)</a></button>
+
+                </ul>
+
+                </button>
+                <button><a class="dropdown-item" href="#">Cursar 1 troncal de opción no cursada</a></button>
+                </ul>
+
+            </div>
+
+
+
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-info dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Educación para la ciudadanía o Religión (1h) </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=ECDH">Ciudadanía
+            </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=REL">Religión
+            </a></button>
+                </ul>
+
+            </div>
+        </section>
+        <section class="row">
+            <h2 class="text-center col-12 mt-5">1º BACHILLERATO DE HUMANIDADES - Asignaturas</h2>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Troncales (17 horas)
+        </button>
+                <ul class="dropdown-menu ">
+                    <button><a class="dropdown-item " href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=FIL">Filosofía
+              (3h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=LCL">Lengua
+              Castellana y Literatura (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=ING">Inglés
+              (3h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/1&cod_materia=MCS">Matemáticas
+              Aplicadas a las ciencias sociales (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/1&cod_materia=LAT">Latín
+              (Humanidades) (4h) </a></button>
+
+
+                </ul>
+
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Troncales de opción (elegir 2) (8 horas) </button>
+                <ul class="dropdown-menu ">
+                    <button><a class="dropdown-item " href="#">Economía (4h) - Obligatoria C Sociales </a></button>
+                    <button><a class="dropdown-item" href="#">Griego (4h) – Obligatoria Humanidades</a></button>
+
+                    <button><a class="dropdown-item " href="#">Historia del mundo contemporáneo (4h)</a></button>
+                    <button><a class="dropdown-item" href="#">Literatura Universal (4h)
+            </a></button>
+
+                </ul>
+
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Específicas obligatorias (4 horas)
+        </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=ESO/1&cod_materia=EF">Educación
+              Física (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=FR2">Francés
+              (2h) – Obligatoria Bilingüe </a></button>
+                </ul>
+
+            </div>
+
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Específicas de opción (4 horas). </button>
+                <ul class="dropdown-menu">
+
+                    <button>
+                        <p class="text-center text-warning fw-bold "> Cursar dos materias de entre:</p>
+
+                        <ul>
+                            <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=ANAP">Anatomía
+                  aplicada (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=CULCI">Cultura
+                  científica (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=TIN">Tecnología
+                  industrial I (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=TIYC">TIC
+                  I (2h) </a></button>
+
+                </ul>
+                </button>
+
+                <button>
+                        <p class="text-center text-warning fw-bold ">Una anterior (2h) y 1 de libre configuración:</p>
+                        <ul>
+                            LCA
+
+                            <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=CEYE">Cultura
+                  emprendedora y empresarial </a></button>
+                <button><a class="dropdown-item" href="#">Patrimonio Cultural
+                </a></button>
+
+
+                </ul>
+
+                <ul>
+                    LC
+                    <button><a class="dropdown-item" href="#">Debate (2h) </a></button>
+                    <button><a class="dropdown-item" href="#">Dibujo Artístico (2h) </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=MAT">Estadística
+                  (2h) </a></button>
+                    <button><a class="dropdown-item" href="#">Introducción al comentario de texto (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">La historia a través del cine (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Los medios de comunicación en la era digital (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Preparación de exámenes oficiales DELF (2h)</a></button>
+                    <button><a class="dropdown-item" href="#">Producción audiovisual I (2h)</a></button>
+
+                </ul>
+
+                </button>
+                <button><a class="dropdown-item" href="#">Cursar 1 troncal de opción no cursada</a></button>
+                </ul>
+
+            </div>
+
+
+
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Educación para la ciudadanía o Religión (1h) </button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=ECDH">Ciudadanía
+            </a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=REL">Religión
+            </a></button>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="row">
+            <img src="imgsAsig/imgBachiller.jpg" alt="" class="mt-5 w-75 d-block mx-auto">
+
+            <h1 class="text-center col-12 m-3">Más información</h1>
+
+
+            <div class="col-lg-4 col-sm-12 btn-group">
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/Bachillerato/Hojadeinformaciondeasignaturas1BACH.pdf" class="btn btn-primary  mb-3 ">Optativas</a>
+            </div>
+            <div class="col-lg-4 col-sm-12 btn-group">
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/BachOptativas/Optativa1BachilleratoCienciasDibujoArtsticoOpcinHumanidadesCC.SS.pdf" class="btn  btn-primary mb-3"> Ciencias: Dibujo Artístico I</a>
+            </div>
+            <div class="col-lg-4 col-sm-12 btn-group">
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/BachOptativas/Optativa1BachilleratoCienciasDibujoArtsticoOpcinHumanidadesCC.SS.pdf" class="btn  btn-primary mb-3"> Humanidades: Dibujo Artístico I</a>
+            </div>
+            <div class="col-lg-6 col-sm-12 btn-group">
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/BachOptativas/1BachilleratoCCSSProduccinAudiovisualI.pdf" class="btn btn-primary  mb-3"> Ciencias: Producción Audiovisual I</a>
+            </div>
+            <div class="col-lg-6 col-sm-12 btn-group">
+
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/BachOptativas/1BachilleratoHHCCSS.ProduccinAudiovisual1.pdf" class="btn btn-primary   mb-3"> Humanidades y Ciencias Sociales:Producción Audiovisual I</a>
+            </div>
+
+        </section>
+
+    </div>
+
+</div>
+<div *ngIf="course.id == 6">
+    <div class="container">
+        <h1 class="text-center col-12">2º Bachillerato</h1>
+
+        <section class="row">
+            <h2 class="text-center col-12">2º Bachillerato de Ciencias - Asignaturas</h2>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Troncales (13 horas)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=HES">Historia
+              de España (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=LCL">Lengua
+              Castellana y Literatura (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=ING">Inglés
+              (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=MAT">Matemáticas
+              (4h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Troncales de opción (elegir 2)(8 horas)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=BIO">Biología
+              (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=DBT">Dibujo
+              técnico II (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=FIS">Física
+              (4h)</a></button>
+                    <button><a class="dropdown-item" href="#">Geología (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=QUI">Química
+              (4h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Específicas obligatorias (2 horas)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=HFI">Historia
+              de la Filosofía (2h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Específicas de opción (elegir una) (4h)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=PSI">Psicología
+              (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=TIC">TIC
+              II (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=FRA">Francés
+              (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=CTMA">Ciencias
+              de la tierra y medio ambiente (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=TIN">Tecnología
+              Industrial II (4h)</a></button>
+                    <button><a class="dropdown-item" href="#">Una materia troncal de opción no cursada.</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Libre configuración (2 horas). Elegir entre:</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="#">LC propia</a></button>
+                    <ul>
+                        <button><a class="dropdown-item" href="#">Historia del pensamiento político (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Robótica (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Genética (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Estadísticas (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Diseño asistido por ordenador (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Preparación de exámenes oficiales DELF (2h)*</a></button>
+                        <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIEN/1&cod_materia=MAT">Estadística
+                (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Comentario de texto (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Actividad Física y Salud (2h)*</a></button>
+                    </ul>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=MLCP3">Francés
+              (para quien no la tenga como específica) (2h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-info dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Educación para la ciudadanía o Religión (1h) (elegir una)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=ECDH">Educación
+              para la ciudadanía (1h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=REL">Religión
+              (1h)</a></button>
+                </ul>
+            </div>
+        </section>
+
+        <section class="row mt-5">
+            <h2 class="text-center col-12">2º Bachillerato de Humanidades - Asignaturas</h2>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Troncales (17 horas)</button>
+                <!--Las horas no estaban sumadas correctamente.-->
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=HES">Historia
+              de España (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=LCL">Lengua
+              Castellana y Literatura (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/CIENC/2&cod_materia=ING">Inglés
+              (3h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=LAT">Latín
+              (Humanidades) (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=MCS">Matemáticas
+              Aplicadas a las ciencias sociales (4h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Troncales de opción (elegir 2)(8 horas)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="#">Economía de la empresa (4h) - Obligatoria Ciencias Sociales</a></button>
+                    <button><a class="dropdown-item" href="#">Geografía (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=GRI">Griego
+              II (4h) - Obligatoria Humanidades</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=HAR">Historia
+              del arte (4h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Específicas obligatorias (2 horas)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=HFI">Historia
+              de la Filosofía (2h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Específicas de opción (elegir una) (4h)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=PSI">Psicología
+              (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=TIC">TIC
+              II (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=FRA">Francés
+              (4h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=FAG">Fundamentos
+              de administración y gestión (4h)</a></button>
+                    <button><a class="dropdown-item" href="#">Una materia troncal de opción no cursada.</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Libre configuración (2 horas). Elegir entre:</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="#">LC propia</a></button>
+                    <ul>
+                        <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=MLCP1">Historia
+                del pensamiento político (2h)</a></button>
+                        <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=MLCP2">Introducción
+                al derecho (2h)</a></button>
+                        <button><a class="dropdown-item" href="#">Estadística (2h)*</a></button>
+                        <button><a class="dropdown-item" href="#">Comentario de texto (2h)*</a></button>
+                        <button><a class="dropdown-item" href="#">Dibujo Artístico (2h)*</a></button>
+                        <button><a class="dropdown-item" href="#">Preparación de exámenes oficiales DLF (2h)*</a></button>
+                        <button><a class="dropdown-item" href="#">Producción audiovisual II (2h)*</a></button>
+                        <button><a class="dropdown-item" href="#">Actividad Física y Salud (2h)*</a></button>
+                    </ul>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=MLCP3">Francés
+              (para quien no la tenga como específica) (2h)</a></button>
+                </ul>
+            </div>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <button type="button" class="btn btn-success dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Educación para la ciudadanía o Religión (1h) (elegir una)</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=ECDH">Educación
+              para la ciudadanía (1h)</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=BACH/HUMA/2&cod_materia=REL">Religión
+              (1h)</a></button>
+                </ul>
+            </div>
+        </section>
+
+        <img src="imgsAsig/imgBachiller.jpg" alt="" class="mt-5 w-75 d-block mx-auto">
+
+        <section class="row text-center mt-5">
+            <h2 class="col-12 mb-3">Más Información</h2>
+            <div class="btn-group col-lg-6 col-sm-12 mb-3">
+                <a class="btn btn-primary p-1" href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/Bachillerato/Hojadeinformaciondeasignaturas2BACH.pdf">Optativas</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mb-3">
+                <a class="btn btn-primary p-1" href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/Optativas_2_bachillerato/2BachilleratoCiencias.ProduccinaudiovisualII.pdf">Producción
+          AudioVisual II</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12">
+                <a class="btn btn-primary p-1" href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/Optativas_2_bachillerato/2BachilleratoHumanidadesyCienciasSocialesProduccinAudiovisualII.pdf">Producción
+          AudioVisual II</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12">
+                <a class="btn btn-primary p-1" href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/Optativas_2_bachillerato/2BachilleratoHumanidadesyCCSSDibujoArtisticoII.pdf">Dibujo
+          Artístico II</a>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<!--FP Presencial-->
+<!--DAW-->
+<div *ngIf="course.id == 11">
+
+
+
+    <section class="row">
+        <h1 class="text-center col-12">DAW - Distancia</h1>
+        <h2 class="text-center col-12">Primer curso - 30 horas semanales</h2>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=LMSGI">     Lenguajes de Marcas y Sistemas de Gestión de la Información      </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=BADAT">     Bases de datos     </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=ENDES">    Entornos de Desarrollo     </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=PROGR">  Programación    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=SIINF">    Sistemas Informáticos    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=FOL"> Formación y Orientación Laboral    </a>
+        </div>
+    </section>
+    <section class="row">
+        <h2 class="text-center col-12 mt-5">Segundo curso - 30 horas semanales</h2>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DWECL">   Desarrollo Web en Entorno Cliente      </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DWESE">   Desarrollo Web en Entorno Servidor     </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DAWEB">  Despliegue de Aplicaciones Web    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DIWEB">  Diseño de Interfaces Web    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=EINEM">   Empresa e iniciativa emprendedora    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=HLC">Horas de libre configuración    </a>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=PDAWE">  Proyecto de desarrollo de Aplicaciones Web  </a>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <a class="btn btn-success" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=FCT">Formación en Centros de Trabajo (370 horas)  </a>
+        </div>
+    </section>
+
+    <section class="row">
+        <img src="imgsAsig/fpDistancia.png" alt="" class="mt-5 w-75  d-block mx-auto">
+
+        <h1 class="text-center col-12 m-3">Más información</h1>
+
+
+        <div class="col-lg-4 col-sm-12 btn-group">
+            <a href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/quiero-formarme/modalidades/a-distancia" class="btn btn-primary  mb-3 ">Portal de FP a distancia</a>
+        </div>
+        <div class="col-lg-4 col-sm-12 btn-group">
+            <a href="http://www.iesaguadulce.es/centro/index.php/documentacion-necesaria-damd-y-dawd" class="btn  btn-primary mb-3"> Documentación necesaria junto con la solicitud.</a>
+        </div>
+        <div class="col-lg-4 col-sm-12 btn-group">
+            <a href="http://www.iesaguadulce.es/centro/index.php/9-nuestro-centro/152-plan-de-estudios-daw-a-distancia" class="btn  btn-primary mb-3"> Plan de Estudios DAW a distancia.</a>
+        </div>
+        <div class="col-lg-6 col-sm-12 btn-group">
+            <a href="http://www.iesaguadulce.es/centro/index.php/normativa-damd-y-dawd" class="btn btn-primary  mb-3"> Normativa aplicable al titulo.</a>
+        </div>
+        <div class="col-lg-6 col-sm-12 btn-group">
+
+            <a href="http://www.iesaguadulce.es/centro/index.php/convalidaciones-damd-y-dawd" class="btn btn-primary   mb-3"> Convalidaciones.</a>
+        </div>
+
+
+
+    </section>
+
+</div>
+<!--SMR-->
+<div *ngIf="course.id == 12">
+    <main>
+        <h1 class="text-center col-12">C.F.G.M. Sistemas Microinformáticos y Redes</h1>
+
+        <section class="row">
+            <h2 class="text-center col-12">Primer Curso - 30 Horas Totales</h2>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/1&cod_materia=MOMAE">Montaje y Mantenimiento de Equipos</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/1&cod_materia=SIOPM">Sistemas Operativos Monopuestos</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/1&cod_materia=SIOPM">Aplicaciones Ofimáticas</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a class="btn btn-info p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/1&cod_materia=REDLO">Redes Locales</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a class="btn btn-info p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/1&cod_materia=FOL">Formación y Orientación Laboral</a>
+            </div>
+        </section>
+
+        <img src="imgsAsig/fpFondo.png" alt="" class="mt-5 w-75 d-block mx-auto">
+
+        <section class="row">
+            <h2 class="text-center col-12 mt-5">Segundo Curso - 30 Horas Totales</h2>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/2&cod_materia=SIOPR">Sistemas Operativos en Red</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/2&cod_materia=SEGIN">Seguridad Informática</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/2&cod_materia=SERRE">Servicios en Red</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/2&cod_materia=APLWE">Aplicaciones Web</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/2&cod_materia=EINEM">Empresa e Iniciativa Emprendedora</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-success p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/2&cod_materia=HLC">Libre Configuración</a>
+            </div>
+            <div class="btn-group col-12 mt-3">
+                <a class="btn btn-success p-1" href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FP/SMR/2&cod_materia=FCT">Formación en centros de trabajo (410 horas)</a>
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="text-center col-12 mt-5">Más Información</h2>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a class="btn btn-primary p-1" href="https://www.juntadeandalucia.es/educacion/portals/web/escolarizacion/fp/oferta-completa/grado-medio-y-grado-superior">Admisión del alumnado del ciclo</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a class="btn btn-primary p-1" href="https://www.juntadeandalucia.es/educacion/portals/web/escolarizacion/fp/oferta-completa/grado-medio-y-grado-superior">Pruebas de acceso a ciclos</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-primary dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Normativa SMR</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/centro/images/Legislacion/SMR/RD%201691_2007%2014%20dic%20Titulo%20Tecnico%20SMR.pdf">RD 1691/2007 por el que se establece el título de Técnico en SMR</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/centro/images/Legislacion/SMR/Orden%20de%207%20de%20Julio%20de%202009%20Curriculo%20SMR.pdf">Orden 7/07/2009 por la que se desarrolla el currículo del título de Técnico en SMR</a></button>
+                </ul>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-primary dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Convalidaciones</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/portals/abaco-portlet/content/828a9229-1177-4a14-8a29-5df6805fa557">Normativa</a></button>
+                    <button><a class="dropdown-item" href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/impresoSolicitudConvalidaciones.pdf">Modelo de Solicitud</a></button>
+                </ul>
+            </div>
+        </section>
+    </main>
+</div>
+<!--FP básica-->
+<div *ngIf="course.id == 13">
+    <div class="container">
+        <section class="row">
+            <h1 class="text-center col-12">FP Básica: Profesional Básico en Informática y Comunicaciones</h1>
+            <h2 class="text-center col-12">Primer Curso</h2>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/1&cod_materia=CAI" class="btn btn-info   mb-3">Ciencias aplicadas I (5h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/1&cod_materia=CSI" class="btn btn-info   mb-3">Comunicación y sociedad I (8h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/1&cod_materia=MMSCI" class="btn btn-info   mb-3">Montaje y mantenimiento de sistemas y componentes informáticos (9h)</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/1&cod_materia=OACE" class="btn btn-info   mb-3">Operaciones Auxiliares para la Configuración y la Explotación (7h)</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a href="#" class="btn btn-info   mb-3">Tutoría (1h)</a>
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="text-center col-12 mt-5">Segundo Curso</h2>
+
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/2&cod_materia=CAII" class="btn btn-success   mb-3">Ciencias aplicadas II (5h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/2&cod_materia=CSII" class="btn btn-success   mb-3">Comunicación y sociedad II (7h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/2&cod_materia=EEE" class="btn btn-success   mb-3">Equipos eléctricos y electrónicos (8h)</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/2&cod_materia=IMRTD" class="btn btn-success   mb-3">Instalación y mantenimiento de redes para transmisión de datos (8h)</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a href="#" class="btn btn-success   mb-3">Unidad Formativa de Prevención de Riesgos Laborales (1h)</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a href="#" class="btn btn-success   mb-3">Tutoría (1h)</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a href="http://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPB/INF/2&cod_materia=FCT" class="btn btn-success   mb-3">Formación en centros de trabajo (120 en total)</a>
+            </div>
+        </section>
+
+        <section class="row">
+            <img src="fpFondo.png" alt="" class="mt-5 w-75 d-block mx-auto">
+
+            <h1 class="text-center col-12 m-3">Más información</h1>
+
+
+            <div class="col-lg-6 col-sm-12 btn-group">
+
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/FPBasica/RES_informatica_comunicaciones.pdf" class="btn btn-primary   mb-3">Resumen del título</a>
+            </div>
+            <div class="col-lg-6 col-sm-12 btn-group">
+
+                <a href="http://www.iesaguadulce.es/centro/images/Documentos_oficiales/Secretaria/FPBasica/RequisitosparasolicitarlaFPBasica.pdf" class="btn btn-primary   mb-3">Requisitos para solicitarla</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!--FP a distancia-->
+<!--DAW-->
+<div *ngIf="course.id == 21">
+
+
+
+    <section class="row">
+        <h1 class="text-center col-12">DAW - Distancia</h1>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=LMSGI">     Lenguajes de Marcas y Sistemas de Gestión de la Información      </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=BADAT">     Bases de datos     </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=ENDES">    Entornos de Desarrollo     </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=PROGR">  Programación    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=SIINF">    Sistemas Informáticos    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=FOL"> Formación y Orientación Laboral    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DWECL">   Desarrollo Web en Entorno Cliente      </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DWESE">   Desarrollo Web en Entorno Servidor     </a>
+        </div>
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DAWEB">  Despliegue de Aplicaciones Web    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=DIWEB">  Diseño de Interfaces Web    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=EINEM">   Empresa e iniciativa emprendedora    </a>
+        </div>
+
+        <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=HLC">Horas de libre configuración    </a>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=PDAWE">  Proyecto de desarrollo de Aplicaciones Web  </a>
+        </div>
+
+        <div class="btn-group col-lg-6 col-sm-12 mt-3">
+            <a class="btn btn-info" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAW&cod_materia=FCT">Formación en Centros de Trabajo   </a>
+        </div>
+    </section>
+
+    <section class="row">
+        <img src="imgsAsig/fpDistancia.png" alt="" class="mt-5 w-75   d-block mx-auto">
+
+        <h1 class="text-center col-12 m-3">Más información</h1>
+
+
+        <div class="col-lg-4 col-sm-12 btn-group">
+            <a href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/quiero-formarme/modalidades/a-distancia" class="btn btn-primary   ">Portal de FP a distancia</a>
+        </div>
+        <div class="col-lg-4 col-sm-12 btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+
+    Documentación necesaria junto con la solicitud.
+  </button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/solicitud-matricula/2244-documentacion-necesaria"> Enlace de solicitud de matricula. </a></button>
+                <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/educacion/secretariavirtual/">      Solicitud mediante la secretaría virtual.
+
+            </a></button>
+
+            </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12 btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+        Convalidaciones.           </button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza">Orden de 16 de diciembre de 2002 </a></button>
+                <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza">Orden ECD/1842/2002 </a></button>
+                <button><a class="dropdown-item" href="https://www.boe.es/boe/dias/2002/01/09/pdfs/A00982-01021.pdf">ORDEN de 20 de diciembre de 2001  </a></button>
+
+            </ul>
+        </div>
+
+        <div class="col-lg-12 mt-3 col-sm-12 btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+            Normativa aplicable al titulo.         </button>
+            <ul class="dropdown-menu">
+                <button><a class="dropdown-item" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2006-7899">Ley Orgánica 2/2006 </a></button>
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/BOE-A-2011-13118.pdf">Real Decreto 1147/2011, de 29 de julio, </a></button>
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/RD_FP_1538_2006.pdf">Real Decreto 1538/2006, de 15 de diciembre  </a></button>
+
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/Decreto3592011_DS.pdf">DECRETO 359/2011, de 7 de diciembre</a></button>
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/BOJA_Orden_IEDA_adm.pdf">Orden de 21 de junio de 2012 </a></button>
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/normativa-fp/115-evaluacion/1700-orden-evaluacion-fp">ORDEN de 29 de septiembre de 2010 </a></button>
+
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/Decreto3592011_DS.pdf">Orden de 14 de Mayo de 2007</a></button>
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/BOJA_Orden_IEDA_adm.pdf">Orden de 20 de Julio de 2006 </a></button>
+                <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/normativa-fp/115-evaluacion/1700-orden-evaluacion-fp">Orientaciones de la Dirección General de Formación Profesional y Educación Permanente </a></button>
+
+
+                <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2011/142/20">Orden de 16 de junio de 2011</a></button>
+                <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2011/144/16">Orden de 16 de junio de 2011 </a></button>
+                <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2010/168/4">Orden de 19 de julio de 2010 </a></button>
+
+            </ul>
+        </div>
+    </section>
+</div>
+<!--DAM-->
+<div *ngIf="course.id == 22">
+    <main>
+        <h1 class="text-center col-12">C.F.G.S. Desarrollo de Aplicaciones Multiplataforma a distancia</h1>
+
+        <section class="row">
+            <h2 class="text-center col-12">DAM a distancia</h2>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=ACDAT">Acceso a datos</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=BADAT">Base de datos</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=DEINT">Diseño de interfaces</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=ENDES">Entornos de desarrollo</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=EINEM">Empresa e iniciativa emprendedora</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=FCT">Formación en centros de trabajo (FCT)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=FOL">Formación y orientación laboral</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=HLC">Libre configuración</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=LMSGI">Lenguajes de marcas y sistemas de gestión de información</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=PDAMU">Proyecto DAM</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=PMDMO">Programación multimedia y dispositivos móviles</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=PROGR">Programación</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica//verProgramacion.php?cod_curso=FPD/DAM&cod_materia=PSPRO">Programación de servicios y procesos</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=SGEMP">Sistemas de gestión empresarial</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a class="btn btn-info p-1" href="https://www.iesaguadulce.es/gestiona/publica/verProgramacion.php?cod_curso=FPD/DAM&cod_materia=SIINF">Sistemas informáticos</a>
+            </div>
+        </section>
+
+        <img src="imgsAsig/fpDistancia.png" alt="" class="mt-5 w-75 d-block mx-auto">
+
+        <section class="row">
+            <h2 class="text-center col-12 mt-5">Más Información</h2>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-primary dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Legislación que regula estos estudios</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/boja/2007/107/1">Orden de admisión del alumnado en la oferta completa y parcial de los ciclos formativos de F.P</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/boja/2003/148/1">Orden de 16 de julio de 2003, por la que se regulan aspectos de la organización modular de los ciclos formativos de Formación Profesional específica en los centros docentes de la Comunidad Autónoma de Andalucía</a></button>
+                </ul>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <a class="btn btn-primary p-1" href="http://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/quiero-formarme/modalidades/a-distancia">Portal de FP a distancia</a>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-primary dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Documentación necesaria junto a la solicitud</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/solicitud-matricula/2244-documentacion-necesaria">Solicitud de matrícula</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/educacion/secretariavirtual/">Solicitud mediante la secretaría virtual</a></button>
+                </ul>
+            </div>
+            <div class="btn-group col-lg-6 col-sm-12 mt-3">
+                <button type="button" class="btn btn-primary dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Convalidaciones</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Convalidaciones/O%202002-12-16%20convalidaciones.pdf">Orden de 16 de diciembre de 2002 de la Consejería de Educación y Ciencia</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Convalidaciones/OrdenECD1842_2002%281%29.pdf">Orden ECD/1842/2002 de 9 julio por la que se rectifican errores advertidos en la Orden 20 diciembre 2001</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.boe.es/boe/dias/2002/01/09/pdfs/A00982-01021.pdf">ORDEN de 20 de diciembre de 2001</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/formacion-en-empresas/formacion-en-centros-de-trabajo/1969-publicadaordenfct">ORDEN de 28 de septiembre de 2011,</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/normativa-fp/convalidaciones">Más información</a></button>
+                </ul>
+            </div>
+            <div class="btn-group col-12 mt-3">
+                <button type="button" class="btn btn-primary dropdown-toggle p-1" data-bs-toggle="dropdown" aria-expanded="false">Normativa</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="http://www.boe.es/buscar/doc.php?id=BOE-A-2006-7899">Ley Orgánica 2/2006, de 3 de mayo, de Educación</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/BOE-A-2011-13118.pdf">Real Decreto 1147/2011, de 29 de julio</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/RD_FP_1538_2006.pdf">Real Decreto 1538/2006, de 15 de diciembre</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/Decreto3592011_DS.pdf">DECRETO 359/2011, de 7 de diciembre</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/BOJA_Orden_IEDA_adm.pdf">Orden de 21 de junio de 2012</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/normativa-fp/115-evaluacion/1700-orden-evaluacion-fp">ORDEN de 29 de septiembre de 2010</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/orden_de_14_de_mayo_de_2007.pdf">Orden de 14 de Mayo de 2007</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/orden_20_julio_2006.pdf">Orden de 20 de Julio de 2006</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/Orientaciones_FPD_0506.pdf">Orientaciones de la Dirección General de Formación Profesional y Educación Permanente, durante el curso 2005/2006</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2011/142/20">Orden de 16 de junio de 2011</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2011/144/16">Orden de 16 de junio de 2011</a></button>
+                    <button>
+                        <hr class="dropdown-divider">
+                    </button>
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2010/168/4">Orden de 19 de julio de 2010</a></button>
+                </ul>
+            </div>
+        </section>
+    </main>
+</div>
+<!--ASIR-->
+<div *ngIf="course.id == 23">
+    <div class="container">
+        <section class="row">
+            <h1 class="text-center col-12">C.F.G.S. Administración de Sistemas Informáticos en Red a distancia</h1>
+            <h2 class="text-center col-12">ASIR - (a distancia)</h2>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="#" class="btn btn-info   mb-3">Implantación de sistemas operativos (ISO) (256h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="#" class="btn btn-info   mb-3">Planificación y administración de redes (PAR) (192h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="#" class="btn btn-info   mb-3">Fundamentos de hardware (FHW) (96h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="#" class="btn btn-info   mb-3">Gestión de bases de datos (GBD) (192h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="#" class="btn btn-info   mb-3">Lenguajes de marcas y sistemas de gestión de información (LM) (128h)</a>
+            </div>
+            <div class="btn-group col-lg-4 col-sm-12 mt-3" ngbDropdown> <a href="#" class="btn btn-info   mb-3">Formación y orientación laboral (FOL) (96h)</a>
+            </div>
+        </section>
+
+        <section class="row">
+            <img src="fpDistancia.png" alt="" class="mt-5 w-75 d-block mx-auto">
+
+            <h1 class="text-center col-12 m-3">Más información</h1>
+            <div class="col-lg-6 col-sm-12 btn-group">
+
+                <a href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza/quiero-formarme/modalidades/a-distancia" class="btn btn-primary   mb-3">Portal de FP a distancia</a>
+            </div>
+            <div class="col-lg-6 col-sm-12 btn-group">
+                <a href="https://www.juntadeandalucia.es/educacion/secretariavirtual/" class="btn btn-primary   mb-3">Documentación necesaria junto con la solicitud</a>
+            </div>
+
+            <div class="col-lg-6 mt-3 col-sm-12 btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Convalidaciones</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza">Orden de 16 de
+              diciembre de 2002 </a></button>
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza">Orden
+              ECD/1842/2002 </a></button>
+                    <button><a class="dropdown-item" href="https://www.boe.es/boe/dias/2002/01/09/pdfs/A00982-01021.pdf">ORDEN de 20
+              de diciembre de 2001 </a></button>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 mt-3 col-sm-12 btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+          Normativa aplicable al titulo</button>
+                <ul class="dropdown-menu">
+                    <button><a class="dropdown-item" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2006-7899">Ley Orgánica 2/2006
+            </a></button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/BOE-A-2011-13118.pdf">Real
+              Decreto 1147/2011, de 29 de julio, </a></button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/RD_FP_1538_2006.pdf">Real
+              Decreto 1538/2006, de 15 de diciembre </a></button>
+
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/Decreto3592011_DS.pdf">DECRETO
+              359/2011, de 7 de diciembre</a></button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/BOJA_Orden_IEDA_adm.pdf">Orden
+              de 21 de junio de 2012 </a></button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/normativa-fp/115-evaluacion/1700-orden-evaluacion-fp">ORDEN
+              de 29 de septiembre de 2010 </a></button>
+
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/NormativaFP/Decreto3592011_DS.pdf">Orden
+              de 14 de Mayo de 2007</a></button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/data/documentos/Normativa%20FPD/BOJA_Orden_IEDA_adm.pdf">Orden
+              de 20 de Julio de 2006 </a></button>
+                    <button><a class="dropdown-item" href="http://www.juntadeandalucia.es/educacion/formacionprofesional/index.php/normativa-fp/115-evaluacion/1700-orden-evaluacion-fp">Orientaciones
+              de la Dirección General de Formación Profesional y Educación Permanente </a></button>
+
+
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2011/142/20">Orden de 16 de junio de
+              2011</a></button>
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2011/144/16">Orden de 16 de junio de
+              2011 </a></button>
+                    <button><a class="dropdown-item" href="https://www.juntadeandalucia.es/boja/2010/168/4">Orden de 19 de julio de
+              2010 </a></button>
+
+                </ul>
+            </div>
+        </section>
+    </div>
 </div>

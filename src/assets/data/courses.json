@@ -1,12 +1,62 @@
 [
   {
     "id": 1,
-    "name": "Desarrollo de Aplicaciones Web",
-    "description": "Curso para el aprendizaje del desarrollo de aplicaciones web con tecnologías como Javascript o PHP"
+    "name": "Primero",
+    "description": "Primer curso de Educación Secundaria Obligatoria"
   },
   {
     "id": 2,
-    "name": "Desarrollo de Aplicaciones Multiplataforma",
+    "name": "Segundo",
+    "description": "Segundo curso de Educación Secundaria Obligatoria"
+  },
+  {
+    "id": 3,
+    "name": "Tercero",
+    "description": "Tercer curso de Educación Secundaria Obligatoria"
+  },
+  {
+    "id": 4,
+    "name": "Cuarto",
+    "description": "Cuarto curso de Educación Secundaria Obligatoria"
+  },
+  {
+    "id": 5,
+    "name": "Primero",
+    "description": "Primer curso de Bachillerato"
+  },
+  {
+    "id": 6,
+    "name": "Segundo",
+    "description": "Segundo curso de Bachillerato"
+  },
+  {
+    "id": 11,
+    "name": "DAW",
+    "description": "Curso para el aprendizaje del desarrollo de aplicaciones web con tecnologías como Javascript o PHP"
+  },
+  {
+    "id": 12,
+    "name": "SMR",
+    "description": "Sistemas Microinformáticos en Red"
+  },
+  {
+    "id": 13,
+    "name": "FP Básica",
+    "description": "Formación Profesional Básica"
+  },
+  {
+    "id": 21,
+    "name": "DAW",
+    "description": "Curso para el aprendizaje del desarrollo de aplicaciones web con tecnologías como Javascript o PHP"
+  },
+  {
+    "id": 22,
+    "name": "DAM",
     "description": "Curso para el aprendizaje del desarrollo de aplicaciones multiplataforma para escritorio y dispositivos móviles"
+  },
+  {
+    "id": 23,
+    "name": "ASIR",
+    "description": "Curso para el aprendizaje del Administración de Sistemas Informáticos en Red a distancia"
   }
 ]

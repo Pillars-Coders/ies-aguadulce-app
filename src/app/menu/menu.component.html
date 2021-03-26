@@ -1,0 +1,87 @@
+<header class="row justify-content-center">
+  <div class="col-12 col-lg-2 col-md-2 text-center mb-3">
+    <img src="./assets/imgs/logo_ies_aguadulce.png" alt="" id="logo" class="mt-5">
+  </div>
+  <div class="col-10 col-lg-8  col-md-10">
+    <div class="card bg-dark text-white">
+      <img src="./assets/imgs/iesaguadulce.jpeg" alt="" id="fondoCabecera">
+      <div class="card-img-overlay">
+        <h5 class="card-title text-center mt-5 fs-3">IES AGUADULCE</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-2 col-lg-2 col-md-2  m-0 p-0 mt-5"  id="iconos">
+      <img src="./assets/imgs/fc_logo.png" alt=""><br>
+      <img src="./assets/imgs/tw_logo.png" alt="" class="mt-4">
+  </div>
+</header>
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler collapsed" type="button" (click)="toggleState()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse justify-content-center" [ngClass]="{ 'collapse': isCollapse }">
+      <a [routerLink]="['/']">
+        <button type="button" class="btn btn-outline-primary mr-3">Inicio</button>
+      </a>
+      <div class="row">
+        <div class="col mr-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>ESO</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <div *ngFor="let course of courses">
+                <a  *ngIf="course.id < 5" [routerLink]="['/courses', course.id]">
+                  <button ngbDropdownItem>{{ course.name }}</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mr-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>BACHILLERATO</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <div *ngFor="let course of courses">
+                <a  *ngIf="course.id > 4 && course.id < 7" [routerLink]="['/courses', course.id]">
+                  <button ngbDropdownItem>{{ course.name }}</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mr-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>FP PRESENCIAL</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <div *ngFor="let course of courses">
+                <a  *ngIf="course.id > 10 && course.id < 20" [routerLink]="['/courses', course.id]">
+                  <button ngbDropdownItem>{{ course.name }}</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>FP DISTANCIA</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <div *ngFor="let course of courses">
+                <a  *ngIf="course.id > 20 && course.id < 30" [routerLink]="['/courses', course.id]">
+                  <button ngbDropdownItem>{{ course.name }}</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
